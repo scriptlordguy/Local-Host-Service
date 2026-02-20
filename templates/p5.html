@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>p5.js 2D Template</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <style>body{margin:0}</style>
+  </head>
+  <body>
+    <script>
+      function setup(){
+        createCanvas(windowWidth, windowHeight);
+      }
+      function draw(){
+        background(20,30,48);
+        fill(255);
+        textSize(32);
+        textAlign(CENTER, CENTER);
+        text('p5.js 2D Template', width/2, height/2);
+      }
+      function windowResized(){ resizeCanvas(windowWidth, windowHeight); }
+    </script>
+  </body>
+</html>
