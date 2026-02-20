@@ -26,6 +26,9 @@ app.use((req, res, next) => {
 // Serve hosted sites from ./sites via static middleware
 app.use('/sites', express.static(path.join(__dirname, 'sites'), { extensions: ['html', 'htm'] }));
 
+// Serve editable templates so frontend can load example starter files
+app.use('/templates', express.static(path.join(__dirname, 'templates'), { extensions: ['html', 'htm'] }));
+
 // Serve templates and list them
 app.use('/templates', express.static(path.join(__dirname, 'templates')));
 
